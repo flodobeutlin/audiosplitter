@@ -1,0 +1,14 @@
+* audiosplitter
+Split an audio file into multiple tracks according to a list of timestamps
+
+** Usage
+With nix flakes:
+#+begin_src bash
+nix run .# -- TIMESTAMPS AUDIO_SOURCE OUT_DIR
+#+end_src
+
+| PARAMETER    | EXPLANATION                                       |
+|--------------+---------------------------------------------------|
+| TIMESTAMPS   | csv file with format "TITLE, BEGIN_TIMESTAMP"     |
+| AUDIO_SOURCE | source audio file the tracks will be cut out from |
+| OUT_DIR      | directory where tracks will be placed             |
